@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Poppins&display=swap');
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 2100px;
+            height: 2970px;
+            border:solid;
+        }
+        .main{
+            /* border:solid pink 7px; */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .top-sec{
+            /* border:solid gold 4px; */
+        }
+        .bot{
+            /* border:solid rgb(0, 255, 170) 4px; */
+        }
+        .bold{
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .header-container{
+            display: flex;
+            /* border:solid green; */
+        }
+        .logo{
+            /* border:solid red; */
+            justify-content: center;
+            display: flex;
+            width: 23em;
+        }
+        .header-content{
+            /* border:solid skyblue; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            gap: 1em;
+        }
+        .logo-img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+        hr{
+            width: 100%;
+            margin: 20px 0px;
+            border: solid black 4px;
+        }
+        h1{
+            color: green;
+            font-size: 6em;
+        }
+        h6{
+            font-size: 2.5em;
+            text-align: center;
+        }
+        .ex-bold{
+            font-weight: 501;
+        }
+        .top-img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+        .top{
+            height: 4em;
+        }
+        .margin-top{
+            margin-top:10px;
+        }
+        .date-time{
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5em;
+            font-size: 1.6em;
+            font-weight: 600;
+            padding: 10px;
+        }
+        .middle{
+            /* border:solid purple; */
+            flex-grow: 1;
+        }
+        .table1{
+            /* border: solid green; */
+            width: 100%;
+            /* border: solid; */
+            text-align: center;
+            border-collapse: collapse;
+            font-family: 'Poppins', sans-serif;
+        }
+        .table1-body{
+            font-size: 1.6em;
+        }
+        .primary{
+            color:white;
+            border:none;
+            background: rgb(59, 59, 236);
+            font-size: 2em;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .danger{
+            color:white;
+            border:none;
+            background: rgb(236, 59, 59);
+            font-size: 1em;
+            padding: 6px 2px;
+            border-radius: 10px;
+            width: 40px;
+        }
+        .controls-button-holder{
+            text-align: right;
+            padding: 20px;
+        }
+        th{
+            font-size: 1.25em;
+        }
+        td{
+            height: 2em;
+            border: solid;
+        }
+        th{
+            border: solid;
+        }
+        .heading{
+            font-weight: bold;
+            font-size: 1.1em;
+            letter-spacing: 2px;
+        }
+        .col-names{
+            background: #00e7ff9c;
+
+        }
+        .borderless{
+            border:none;
+        }
+        @media print{
+            @page {
+                size:210mm 297mm
+            }
+            .controls{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top-sec">
+            <div class="header-container">
+                <div class="logo">
+                    <img class="logo-img" src="logo_white_back.png">
+                </div>
+                <div class="header-content">
+                    <div class="top">
+                        <img class="top-img" src="Frame 1star.png">
+                    </div>
+                    <h1>फरजान कन्स्ट्रक्शन</h1>
+                    <h6>आमच्याकडे सर्व प्रकारच्या प्लंबिंगची तसेच पेंटीग, बांधकाम, प्लॅस्टर, आर.सी.सी., ग्रेनाइट व टाइल्सची कामे योग्य दरात करून मिळतील.</h6>
+                </div>
+            </div>
+            <div class="margin-top">
+                <hr>
+                <h6>बालाजीनगर , भोसरी , पुणे ४११ ०२६. मो.नं.:<span class="bold"> 9822507856, 8830724060, 9822303086.</span></h6>
+                <hr>
+            </div>
+            <div class="margin-top date-time">
+                <div>संदर्भ :</div>
+                <div>दिनांक : &nbsp; &nbsp; &nbsp;/  &nbsp; &nbsp; &nbsp;     / 20</div>
+            </div>
+        </div>
+        <div class="middle">
+            <table class="table1">
+                <tbody class="table1-body" id="tb1-bdy">
+                    <tr class="col-names">
+                        <th>Sr.no</th>
+                        <th>Material</th>
+                        <th>Qty</th>
+                        <th contenteditable="true">Material cost</th>
+                    </tr>
+                    <!-- <tr>
+                        <td contenteditable="true">Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                        <td>50</td>
+                    </tr> -->
+                </tbody>
+              </table> 
+              <div class="margin-top controls controls-button-holder">
+                  <button class="controls primary" onclick="executePrint(event)">Print</button>
+                  <button class="controls primary" onclick="addHeading(event)">Add Heading</button>
+                  <button class="controls primary" onclick="addRow(event)">Add row</button>
+              </div>
+        </div>
+        <div class="bot">
+            <div class="date-time">
+                <div>देणाऱ्याची सही</div>
+                <div>घेणाऱ्याची सही</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addRow(event){
+            console.log("event",event)
+            let tbody=document.getElementById('tb1-bdy')
+            let trow=document.createElement('tr')
+            for (let i=0;i<5;i++){
+                let tdata=document.createElement('td')
+                if (i==1){
+                    tdata.style.width='70%'
+                }
+                if(i==4){
+                    let del=document.createElement('button')
+                    del.classList.add("danger","controls")
+                    del.innerHTML='x'
+                    del.onclick=()=>deleteRow(trow)
+                    tdata.classList.add("borderless")
+                    tdata.appendChild(del)
+                }else{
+                    tdata.setAttribute("contenteditable",true)
+                }
+                // tdata.innerHTML='xyz'
+                trow.appendChild(tdata)
+            }
+            tbody.appendChild(trow)
+            // let mat=document.createElement('td')
+            // let qty=document.createElement('td')
+            // let lab=document.createElement('td')
+            // let matCost=document.createElement('td')
+            // trow.appendChild(mat)
+        }
+
+        function deleteRow(row){
+            console.log('delete',row)
+            row.remove()
+        }
+
+        function addHeading(event){
+            console.log('theading')
+            let tbody=document.getElementById('tb1-bdy')
+            let trow=document.createElement('tr')
+            let tdata=document.createElement('td')
+            tdata.classList.add("heading")
+            tdata.setAttribute("colspan",4)
+            tdata.setAttribute("contenteditable",true)
+
+            let tdata1=document.createElement('td')
+            let del=document.createElement('button')
+            del.classList.add("danger","controls")
+            del.innerHTML='x'
+            del.onclick=()=>deleteRow(trow)
+            tdata1.appendChild(del)
+            tdata1.classList.add("borderless")
+
+            trow.appendChild(tdata)
+            trow.appendChild(tdata1)
+
+            tbody.appendChild(trow)
+        }
+
+        function executePrint(event){
+            window.print()
+        }
+    </script>
+</body>
+</html>
